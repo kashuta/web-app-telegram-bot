@@ -4,7 +4,7 @@ import "./Card.css"
 
 function Card({food, onAdd, onRemove}) {
     const [count, setCount] = useState(0);
-    const {title, price, Image, id} = food;
+    const {title, price, Image} = food;
 
     const handleIncrement = () => {
         setCount(count + 1);

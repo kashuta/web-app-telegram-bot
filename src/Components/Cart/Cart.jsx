@@ -13,7 +13,9 @@ function Cart({cartItems, onCheckout}) {
             <Button title={`${cartItems.length === 0 ? "Заказать" : "Оплата"}`}
                     type={"checkout"}
                     disable={cartItems.length === 0}
+                    onClick={onCheckout}
             />
+
         </div>
     );
 }
