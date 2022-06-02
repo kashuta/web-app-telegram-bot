@@ -1,0 +1,15 @@
+body {
+    background-color: #0000a4;
+    color: white;
+}
+
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 100;
+}

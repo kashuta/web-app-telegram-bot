@@ -1,13 +1,19 @@
 import './App.css';
-import Button from "./Components/Button/Button";
+import Card from "./Components/Card/Card";
+import {getData} from "./db/db";
+
+const foods = getData();
+console.log(foods)
 
 function App() {
     return (
         <>
-            <Button title={"Add"} disable={false} type={'add'}/>
-            <Button title={"Remove"} disable={false} type={'remove'}/>
-            <Button title={"Checkout"} disable={false} type={'checkout'}/>
-
+            <h1 className="heading">www.artka.dev</h1>
+            <div className="cards__container">
+                {foods.map(food => {
+                    return <Card food={food} key={food.id}/>
+                })}
+            </div>
         </>
     );
 }

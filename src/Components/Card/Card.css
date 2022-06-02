@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #e0c521;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150px;
+    height: 250px;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 0.3rem;
+    margin: 13px 10px;
+    border-radius: 10px;
+}
+
+.card__title {
+    font-weight: 400;
+    text-align: center;
+}
+
+.card__title .card__price {
+    font-weight: bold;
+}
+
+.image__container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.image__container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card__price {
+    text-align: center;
+    display: inline-block;
+}
+
+.card__badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+
+    background-color: rgb(227, 112, 30);
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid rgb(2271, 112, 30);
+    opacity: 0.8;
+
+    transform: translate(20px, -20px) scale(1);
+    transition: all 0.3s ease;
+    animation: scaleAnimation 1s ease infinite;
+}
+
+@keyframes scaleAnimation {
+    to {
+        transform: translate(20px, -20px) scale(1.05);
+        opacity: 1;
+    }
+}
+
+.card__badge-hidden {
+    display: none;
+}
+
