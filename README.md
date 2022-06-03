@@ -1,5 +1,5 @@
 
-<img src="https://i.ibb.co/wWVVx5P/RPReplay-Final1654187419.gif" alt="RPReplay-Final1654187419" border="0"></a>
+![] (web-app-telegram-bot.gif)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
